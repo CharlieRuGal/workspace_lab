@@ -9,7 +9,7 @@ cd my-team-workspace
 code Workspace.code-workspace
 ```
 
-This copy stays local. There is no remote yet.
+Remote: `https://github.com/CharlieRuGal/workspace_lab.git`, branch `main`. UNA Chat is not stored here. Its code is the independent clone `REPOS/Lab5-Paradigmas`, which Git ignores.
 
 Then:
 1. Edit `AGENTS.md` with your team's specifics

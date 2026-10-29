@@ -42,3 +42,42 @@ MCP server configuration lives in [.vscode/mcp.json](.vscode/mcp.json). Add the 
 
 - **copilot-instructions.md** — Global rules applied to every AI interaction. Edit `.github/copilot-instructions.md` to set team-wide conventions.
 - **AGENTS.md in every directory** — Add one to any new folder so agents (and humans) know what it contains.
+
+## Brain
+
+> **TL;DR:** La memoria persistente está en `brain/`. Al empezar cada sesión, leer `brain/daily-log/status.md` y el diario de hoy. Nunca guardar secretos.
+
+Fuente de estas reglas: `obsidian-brain-instructions 1.md`. El mapa es [brain/Home.md](brain/Home.md) y el índice es [brain/INDEX.md](brain/INDEX.md).
+
+### Al empezar
+
+1. Leer `brain/daily-log/status.md` y, si existe, el diario de hoy `brain/daily-log/YYYY-MM-DD.md` (zona `America/Costa_Rica`, UTC-6).
+2. Leer `brain/INDEX.md` y abrir solo las notas que correspondan a la tarea. Seguir los `[[wikilinks]]` desde ahí.
+3. Aplicar [brain/Working/How I work.md](brain/Working/How%20I%20work.md).
+
+### Durante la sesión
+
+- Después de cada paso real (decisión, cambio terminado, bloqueo o dato comprobado), añadir una viñeta al diario de hoy: `- HH:MM UTC-6: qué pasó y qué sigue`.
+- Si el owner corrige o fija una preferencia, anotarla en ese momento en `brain/Working/How I work.md`, con la fecha.
+- No reescribir ni reordenar viñetas ya escritas en el diario. Solo agregar.
+
+### Al cerrar
+
+1. Guardar cada hallazgo durable en su nota. Ver la tabla de abajo.
+2. Reescribir `brain/daily-log/status.md` para que describa el presente: foco, pendientes y en quién se espera. Sustituir lo viejo; no acumular historial ahí.
+3. Si se crea una nota, añadir su fila en `brain/INDEX.md` y su enlace en `brain/Home.md`.
+
+### Dónde va cada cosa
+
+| Qué pasó | Dónde se actualiza |
+|---|---|
+| Trabajo o aprendizaje de la sesión | Diario de hoy y `brain/daily-log/status.md` |
+| Un hecho nuevo del sistema o del dominio | La nota del tema, o una nota nueva más fila en `INDEX.md` y enlace en `Home.md` |
+| Estado de un proyecto | Esa nota: «Current status» fechado arriba y el anterior pasa a «Previous status» |
+| Preferencia o corrección | `brain/Working/How I work.md` |
+| Ruta, remoto o entorno | `brain/Working/Environments.md` |
+| Algo que no se sabe | `brain/Working/Gaps.md` |
+| Un hueco que ya se resolvió | Se borra su línea en `Gaps.md` |
+| Un hecho que resultó falso | Se corrige en la nota. No se deja la versión vieja. |
+
+No guardar secretos en `brain/`: contraseñas, tokens, claves ni cadenas de conexión. Decir solo dónde vive el secreto. Commit y push de estas notas solo cuando el owner lo pida. No versionar `brain/.obsidian/workspace.json`.

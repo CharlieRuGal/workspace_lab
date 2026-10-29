@@ -15,6 +15,9 @@
 # To keep your personal KB private, add it here:
 # /Knowledge/YourName-Brain/
 
+# Obsidian UI state. Brain notes stay versionable.
+brain/.obsidian/workspace.json
+
 # ── OS / editor noise ─────────────────────────────
 .DS_Store
 Thumbs.db

@@ -13,6 +13,7 @@
 
 ## Workspace Navigation
 
+- Follow AGENTS.md in the workspace root, including its Brain section, in every session.
 - Start by reading the root `AGENTS.md` to understand workspace structure.
 - Use progressive disclosure: read TL;DR lines first, descend only into relevant directories.
 - Check `Knowledge/` for domain context before asking the user for information.

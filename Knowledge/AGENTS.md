@@ -9,6 +9,10 @@
 - Decisions and their rationale that should persist across sessions.
 - Personal knowledge bases in `{YourName}-Brain/` subfolders.
 
+## Project memory
+
+The active memory for this workspace is [../brain/Home.md](../brain/Home.md), not a `{YourName}-Brain/` folder. At the start of a session, read [../brain/daily-log/status.md](../brain/daily-log/status.md). UNA Chat is recorded in [../brain/UNA Chat.md](../brain/UNA%20Chat.md). The full index is [../brain/INDEX.md](../brain/INDEX.md).
+
 ## What does NOT belong here
 
 - Reusable step-by-step procedures — put those in [../Skills/AGENTS.md](../Skills/AGENTS.md).
