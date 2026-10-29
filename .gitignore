@@ -1,0 +1,30 @@
+# ═══════════════════════════════════════════════════
+# Shared workspace .gitignore
+# ═══════════════════════════════════════════════════
+
+# ── Personal / machine-specific (never shared) ────
+/Machine/
+/temp/
+
+# Cloned repositories keep their own Git history.
+# Only the index file is versioned in this workspace.
+/REPOS/*
+!/REPOS/AGENTS.md
+
+# ── Personal knowledge bases (optional: remove a line to share yours) ──
+# To keep your personal KB private, add it here:
+# /Knowledge/YourName-Brain/
+
+# ── OS / editor noise ─────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ── Node / Python artifacts ───────────────────────
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.local
